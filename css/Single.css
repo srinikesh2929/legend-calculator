@@ -61,16 +61,26 @@ header ul li{
   width: 95%;
   height: 1.75em;
   text-align:center;
+  border-radius: 10%;
   text-transform: capitalize;
 }
 #submit{
   padding: 8px;
+  justify-content: center;
   width: 10%;
-  text-align: center;
+  background: #555;
+  color: #fff;
+  border-radius:10% ;
 }
 #submit:focus{
   border: #a4acff;
-  border-width: 2em;
-  transition: ease 900ms;
-  box-shadow: 0px 0px 2px 3px red;
+  border-width: 2em;  
+  transition: ease 0.95s;
+  box-shadow: 0px 0px 5px 8px #222;
+}
+#submit:hover{
+  border: #a4acff;
+  border-width: 2em;  
+  transition: ease 0.95s;
+  box-shadow: 0px 0px 5px 8px #222;
 }
