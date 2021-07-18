@@ -63,6 +63,8 @@ header ul li{
   text-align:center;
   text-transform: capitalize;
 }
-#usr:active{
+#usr:active,:focus{
   border: #a4acff;
+  border-width: 2em;
+  box-shadow: 1px 1px 5px red;
 }
