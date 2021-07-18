@@ -1,4 +1,6 @@
-// var greeting = document.getElementById('greeting');
+var greeting = document.querySelector("#greeting");
+var time = document.querySelector("#time");
+
 // var choice;
 // if (choice==="%"){
 //       num1=num1ch.value;
@@ -51,25 +53,24 @@
 //   return result;
 // }
 
-// function displayTime(){
-//         var date= new Date();
-//         var hour = date.getHours();
-//         var minutes= date.getMinutes();
-//         var seconds = date.getSeconds();
-//         var time = hour + " : " + minutes + " : " + seconds;
-//         document.getElementById("time").innerHTML="Time " + "    "+time;
+function displayTime(){
+        var date= new Date();
+        var hour = date.getHours();
+        var minutes= date.getMinutes();
+        var seconds = date.getSeconds();
+        var time_value = hour + " : " + minutes + " : " + seconds;
+        time.innerHTML = "Time " + "    " + time_value;
         
-
-//         if ( hour<12){
-//           greeting.innerHTML="Good Morning!!";
-//         }else if(hour<16){
-//           greeting.innerHTML="Good Afternoon!!";
-//         }else if (hour<21){
-//           greeting.innerHTML="Good Evening!!";
-//         }else if (hour<22){
-//           greeting.innerHTML="Good Night!!";
-//         }else{
-//           greeting.innerHTML="Go to Sleep（︶^︶）";
-//         }
-// }
-// setInterval(displayTime,100);
+        if ( hour<12){
+          greeting.innerHTML="Good Morning!!";
+        }else if(hour<16){
+          greeting.innerHTML="Good Afternoon!!";
+        }else if (hour<21){
+          greeting.innerHTML="Good Evening!!";
+        }else if (hour<22){
+          greeting.innerHTML="Good Night!!";
+        }else{
+          greeting.innerHTML="Go to Sleep（︶^︶）";
+        }
+}
+setInterval(displayTime,100);
