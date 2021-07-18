@@ -63,8 +63,14 @@ header ul li{
   text-align:center;
   text-transform: capitalize;
 }
-#usr:active,:focus{
+#submit{
+  padding: 8px;
+  width: 10%;
+  text-align: center;
+}
+#submit:focus{
   border: #a4acff;
   border-width: 2em;
-  box-shadow: 1px 1px 5px red;
+  transition: ease 900ms;
+  box-shadow: 0px 0px 2px 3px red;
 }
