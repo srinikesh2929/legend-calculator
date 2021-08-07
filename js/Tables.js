@@ -37,7 +37,7 @@ submit.onclick = function () {
     for (var i = 1; i < 11; i++) {
       var product = expInput.value * i;
       var para = document.createElement('p');
-      para.innerHTML = `${expInput.value} X ${i} = ${product}`;
+      para.innerHTML = expInput.value+ ' '+ 'X' +i+' ' + '=' +product;
       para.classList.add('para');
       para.id = 'paragraph';
       document.body.appendChild(para);
