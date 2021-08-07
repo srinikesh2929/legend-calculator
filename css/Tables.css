@@ -107,7 +107,7 @@ header ul li a:hover
   height: 2.5rem; 
   box-sizing: border-box;
   border-radius: 8px;
-  padding: 0%;
+  padding: 0 16px 0 16px;
   border-color: #fff;
   border: 0ch;
   text-align: center;
