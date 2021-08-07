@@ -110,6 +110,7 @@ header ul li a:hover
   padding: 0%;
   border-color: #fff;
   border: 0ch;
+  text-align: center;
 }
 #expinput:focus
 {
