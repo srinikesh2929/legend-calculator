@@ -49,8 +49,11 @@ header .logo
     font-weight: 900 !important;
     text-decoration: none;
     padding: 30px 30px;  
-}
-  
+  }
+  #expintput
+  {
+    text-align:center;
+    padding:0 16px 0 16px ;
 }
 
 header ul
