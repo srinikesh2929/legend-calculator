@@ -10,6 +10,16 @@ body
     background: -moz-linear-gradient(45deg,#e09200,#4dff65);
 }
 
+header
+{
+    display:flex;
+}
 .logo{
     font-family: 'lato',cursive,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900 !important;
+    padding: 30px 100px;
+}
+header div ul {
+    display: flex;
 }
