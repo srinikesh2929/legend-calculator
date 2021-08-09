@@ -4,7 +4,7 @@ var expInput = document.getElementById('expInput');
 //var body = document.getElementById('body');
 var submit = document.getElementById('submit');
 var click_count = 0;
-var article = document.getElementsByTagName('article')
+var article = document.getElementById('article');
 
 
 function displayTime() {
@@ -50,12 +50,14 @@ submit.onclick = function () {
     }  
   } else {
     alert('Please Enter any Number!!');
-    if (expInput.value != '') and  (click_count>1)
-    for (var y = 1; y < 11; y++) {
-      if (expInput.value == '') {
-        document.getElementById('paragraph').remove();
-      }
-    }
+    // if (expInput.value != '') and(click_count > 1){
+    //   for (var y = 1; y < 11; y++) {
+    //     if (expInput.value == '') {
+    //       document.getElementById('paragraph').remove();
+    //     }
+      
+    // }
+    // }
   }
 };
 

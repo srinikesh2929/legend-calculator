@@ -165,17 +165,15 @@ header ul li a:hover
   border: 0ch;
   text-align: center;
 }
-#expinput:focus,:focus-within,:active
+#expinput:focus
 {
   border: 1ch;
   border-color: #aaa;
 }
 #submit
 {
-  margin:1rem;
-  align-items: center;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   cursor: pointer;
   border-radius: 8px;
   margin:1rem auto ; 
@@ -183,6 +181,7 @@ header ul li a:hover
   color:#fff;
   background-color:#222;
   border-style:solid;
+  align-items: center;
 }
 
 
@@ -197,5 +196,5 @@ header ul li a:hover
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
