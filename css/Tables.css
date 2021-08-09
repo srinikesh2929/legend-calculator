@@ -20,7 +20,7 @@ body
   
 }
 
-header
+header div
 {
   display: flex;
   top: 0%;  
@@ -30,6 +30,7 @@ header
   width: 100%;
   
 }
+
 header .logo
 {
   cursor:pointer;
@@ -48,7 +49,7 @@ header .logo
     font-size: 2rem;
     font-weight: 900 !important;
     text-decoration: none;
-    padding: 30px 50px;  
+    padding: 30px 25px;  
   }
   #expintput
   {
@@ -60,8 +61,22 @@ header .logo
   display: flex;
   justify-content: center;
   align-items: center;  
-  padding: 30px 15px;
+  padding: 30px 7.5px;
 
+  }
+  header ul li 
+  {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width:886px) {
+  header .logo{
+    display:grid;
+
+  }
+  header:last-child{
+    display:none;
   }
 }
 
@@ -100,7 +115,7 @@ header ul
 header ul li 
 {
   list-style-type:none;
-  margin: 15px 15px;
+  margin: 0;
 }
 
 header ul li a
