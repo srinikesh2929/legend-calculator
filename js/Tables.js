@@ -4,7 +4,7 @@ var expInput = document.getElementById('expInput');
 //var body = document.getElementById('body');
 var submit = document.getElementById('submit');
 var click_count = 0;
-
+const article = document.getElementsByTagName('article')
 
 
 function displayTime() {
@@ -40,9 +40,9 @@ submit.onclick = function () {
       para.innerHTML = expInput.value+ ' '+ 'X' +i+' ' + '=' +product;
       para.classList.add('para');
       para.id = 'paragraph';
-      document.body.appendChild(para);
+      article.appendChild(para);
     }
-    if (click_count > 1) {      
+    if (click_count > 1) {
       for (var x = 1; x < 11; x++) {
         document.getElementById('paragraph').remove();
         
