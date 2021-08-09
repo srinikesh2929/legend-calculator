@@ -58,9 +58,8 @@ header .logo
   }
   header ul 
   {
-  display: flex;
-  justify-content: center;
-  align-items: center;  
+  display: grid;
+  place-items: centre;
   padding: 30px 7.5px;
 
   }
@@ -75,7 +74,7 @@ header .logo
     display:grid;
 
   }
-  header:last-child{
+  header div:last-child{
     display:none;
   }
 }
