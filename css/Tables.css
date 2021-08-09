@@ -69,12 +69,15 @@ header .logo
   }
 }
 
-@media screen and (min-width:886px) {
+@media screen and (max-width:767px) {
   header .logo{
-    display:grid;
-
+    display:flex;
+    /* place-items: centre; */
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
-  header div:last-child{
+  header div ul{
     display:none;
   }
 }
@@ -162,10 +165,10 @@ header ul li a:hover
   border: 0ch;
   text-align: center;
 }
-#expinput:focus
+#expinput:focus,:focus-within,:active
 {
-  border: 0ch;
-  border-color: #fff;
+  border: 1ch;
+  border-color: #aaa;
 }
 #submit
 {

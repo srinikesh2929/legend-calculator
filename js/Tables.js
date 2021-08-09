@@ -4,7 +4,7 @@ var expInput = document.getElementById('expInput');
 //var body = document.getElementById('body');
 var submit = document.getElementById('submit');
 var click_count = 0;
-const article = document.getElementsByTagName('article')
+var article = document.getElementsByTagName('article')
 
 
 function displayTime() {
