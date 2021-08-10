@@ -15,7 +15,6 @@ function displayTime() {
   var time = hour + " : " + minutes + " : " + seconds;
   document.getElementById("time").innerHTML = "Time " + " " + time;
   
-  
   if (hour < 12) {
     greeting.innerHTML = "Good Morning!!";
   } else if (hour < 16) {
@@ -26,8 +25,8 @@ function displayTime() {
     greeting.innerHTML = "Good Night!!";
   } else {
     greeting.innerHTML = "Go to Sleep（︶^︶）";
-  }
-}
+  };
+};
 
 
 
