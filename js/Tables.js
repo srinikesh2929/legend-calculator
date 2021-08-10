@@ -34,31 +34,31 @@ function displayTime() {
 submit.onclick = function () {
   click_count += 1;
   if (expInput.value != '') {
-    for (var i = 1; i < 11; i++) {
+    for (var i = 1; i <= 11; i = i +1) {
       var product = expInput.value * i;
       var para = document.createElement('p');
       para.innerHTML = expInput.value+ ' '+ 'X' +i+' ' + '=' +product;
       para.classList.add('para');
       para.id = 'paragraph';
       article.appendChild(para);
-    }
-    if (click_count > 1) {
-      for (var x = 1; x < 11; x++) {
-        document.getElementById('paragraph').remove();
-        
-      }
-    }  
-  } else {
-    alert('Please Enter any Number!!');
+    };
     // if (expInput.value != '') and(click_count > 1){
-    //   for (var y = 1; y < 11; y++) {
-    //     if (expInput.value == '') {
-    //       document.getElementById('paragraph').remove();
-    //     }
+      //   for (var y = 1; y < 11; y++) {
+        //     if (expInput.value == '') {
+          //       document.getElementById('paragraph').remove();
+          //     }
+          
+          // }
+          // }
+  };
+  // if (click_count > 1) {
+  //   for (var x = 1; x < 11; x++) {
+  //     document.getElementById('paragraph').remove();
       
-    // }
-    // }
-  }
+  //   }
+  // }else {
+  // alert('Please Enter any Number!!');
+  // }
 };
 
 setInterval(displayTime, 100);
