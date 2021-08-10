@@ -1,8 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap'); */
-@font-face{
-  font-family: "Lato";
-  src:url(../css/Lato/Lato-Bold.ttf);
-}
+
 
 
 *
@@ -41,7 +38,7 @@ header .logo
   cursor:pointer;
   color: #094b65;
   font-size: clamp(1rem , 2rem , 4rem);
-  font-weight: 900 !important;
+  /* font-weight: 900 !important; */
   text-decoration: none;
   padding: 30px 100px;  
 }
@@ -52,7 +49,7 @@ header .logo
     cursor:pointer;
     color: #094b65;
     font-size: 2rem;
-    font-weight: 900 !important;
+    /* font-weight: 900 !important; */
     text-decoration: none;
     padding: 30px 25px;  
   }
