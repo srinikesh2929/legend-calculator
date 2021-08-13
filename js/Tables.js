@@ -2,9 +2,9 @@
 var greeting = document.getElementById('greeting');
 var expInput = document.getElementById('expInput');
 //var body = document.getElementById('body');
-var submit = document.getElementById('submit');
+const submit = document.getElementById('submit');
 var click_count = 0;
-var article = document.getElementById('article');
+// var article = document.getElementById('article');
 
 
 function displayTime() {
@@ -28,20 +28,18 @@ function displayTime() {
   };
 };
 
-
-
-submit.onclick = async function () {
-  click_count += 1;
-  if (expInput.value != '') {
-    for (var i = 1; i <= 11; i = i +1) {
-      var product = expInput.value * i;
-      var para = document.createElement('p');
-      para.innerHTML = await expInput.value+ ' '+ 'X' +i+' ' + '=' +product;
-      para.classList.add('para');
-      para.id = 'paragraph';
-      article.appendChild(para);
-    };
-  };
-};
+// submit.addEventListener('click', function () {
+//   var expInput = document.getElementById("expInput");
+//   var product = document.createElement('p');
+//   var txt = document.createTextNode(expInput.value +' '+'X'+' '+'factor'+' '+'product');
+//   product.appendChild(txt);
+//   document.getElementById('article').appendChild(task);
+//   if(input.value == ""){
+//     alert("Please enter a task!");
+//   }else{
+//     document.getElementById('article').appendChild(task);
+//   }
+//   input.value = "";
+// });
 
 setInterval(displayTime, 100);
