@@ -1,8 +1,9 @@
-
-var greeting = document.getElementById('greeting');
-var expInput = document.getElementById('expInput');
-//var body = document.getElementById('body');
+//this is a website file
+const greeting = document.querySelector('#greeting');
+const expInput = document.getElementById('expInput');
+//var body = document.getElementById('body' );
 const submit = document.getElementById('submit');
+const form = document.querySelector('form');  
 var click_count = 0;
 // var article = document.getElementById('article');
 
@@ -13,7 +14,7 @@ function displayTime() {
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
   var time = hour + " : " + minutes + " : " + seconds;
-  document.getElementById("time").innerHTML = "Time " + " " + time;
+  document.getElementById("time").innerHTML = `Time is :${time}`;
 
   if (hour < 12) {
     greeting.innerHTML = "Good Morning!!";
@@ -28,18 +29,10 @@ function displayTime() {
   };
 };
 
-// submit.addEventListener('click', function () {
-//   var expInput = document.getElementById("expInput");
-//   var product = document.createElement('p');
-//   var txt = document.createTextNode(expInput.value +' '+'X'+' '+'factor'+' '+'product');
-//   product.appendChild(txt);
-//   document.getElementById('article').appendChild(task);
-//   if(input.value == ""){
-//     alert("Please enter a task!");
-//   }else{
-//     document.getElementById('article').appendChild(task);
-//   }
-//   input.value = "";
-// });
-
 setInterval(displayTime, 100);
+
+var tables = () => {
+  console.log('object');
+  setTimeout(console.log('object'), 3000);
+}
+
