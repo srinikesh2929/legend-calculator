@@ -1,5 +1,5 @@
-vscode/*
+.vscode/*
 .code-workspace
-*.vscode/
+# *.vscode/
 src/FirstSvg.svg
 googlea5feba08231a58e6.html
