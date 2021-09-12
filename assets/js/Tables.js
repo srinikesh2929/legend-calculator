@@ -50,4 +50,3 @@ tables = () => {
     paras.innerHTML=`{input} X {i} = {input*i}`
   }
 }
-form.onsubmit = tables();
