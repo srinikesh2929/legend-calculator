@@ -17,7 +17,7 @@
     <!-- thiese are the fonts required for this websites -->
     <link rel="manifest" href="./favicon/site.webmanifest">
   </head>
-  <body id="body" onload="init()">
+  <body id="body" >
     <header>
       <div> 
         <a target="blank"  href="../" class="logo">Legend Calculator</a>
@@ -43,7 +43,11 @@
       <article id="article"> </article>
     </main> -->
     <main>
-        <input type="number"  id="expInput" required >
+        <input type="number"  id="expInput" required class="text-input" placeholder="Type the number here..">
+        <div>
+        <label for="numProducts">Set the limit here :</label>
+        <input type="number" id="numProducts" required value="10" class="text-input" placeholder="Type your limit of products here">
+        </div>
         <button type="submit" id="submit" >Submit</button>
     </main>
     <article id="article"></article>

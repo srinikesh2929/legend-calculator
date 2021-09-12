@@ -7,8 +7,7 @@ const form = document.querySelector('form');
 const article = document.querySelector('#article');
 // var article = document.getElementById('article');
 const timeElement = document.getElementById("time")
-
-
+const numProducts = document.getElementById('numProducts');
 
 function displayTime() {
   var date = new Date();
@@ -33,31 +32,23 @@ function displayTime() {
 
 setInterval(displayTime, 100);
 
-init = () => {
-  // var text ='hi';
-  for (let i = 0; i < 10; i++) {
-    // const element = array[index];
-    var para = document.createElement("p");
-    para.classList.add("para");
-    // para.innerHTML = text;
-    article.appendChild(para);
-    // expInput.disabled = false;
-    // console.log(document.getElementsByClassName("para")[0]);
-  }
-}
 
 submit.onclick = () => {
+  const minusOneLimit = Number(numProducts.value) +1;
+  console.log(minusOneLimit);
+  const limit= minusOneLimit + 1;
+  console.log(limit);
+  for (let i = 0; i < limit; i++) {
+    var para = document.createElement("p");
+    para.classList.add("para");
+    article.appendChild(para);
+  }
   var object = document.getElementsByClassName("para");
   var text = expInput.value;
-  // console.log('here it starts')
   for (let i in object) {
-    // object[i].innerHTML = 'hello';
-    // object[0].innerHTML="shutup";
-    // object[9].innerHTML="You are a good boy";
     product = i * text;
     object[i].innerHTML = `${text} X ${i} = ${product}`
   }
-  // console.log('ends here')
-    
+
 };
 console.log('This project is Working!! ⚡⚡⚡')

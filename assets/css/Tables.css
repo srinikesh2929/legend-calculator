@@ -52,7 +52,7 @@ header .logo
     text-decoration: none;
     padding: 30px 25px;  
   }
-  #expintput
+  .text-input
   {
     text-align:center;
     padding:0 16px 0 16px ;
@@ -122,10 +122,10 @@ header ul li a:hover
   align-content: center;
 }
 
-#expInput
+.text-input
 {
   display: flex;
-  margin:auto;
+  margin:1rem auto;
   width: 98%;
   height: 2.5rem; 
   box-sizing: border-box;
@@ -135,14 +135,14 @@ header ul li a:hover
   border-color: #9b9b9b;
   border: 0ch;
   text-align: center;
+  
 }
 
-
-#expInput:disabled
-{
-  background: #fff !important;
+.text-input#numProducts{
+  width: 75%;
 }
-#expinput:focus
+
+.text-input:focus
 {
   border: 1ch;
   border-color: #aaa;
@@ -174,4 +174,19 @@ header ul li a:hover
   align-items: center;
   justify-content: center;
   font-size:calc(1.5vh*2);
+}
+
+::selection{
+  background:#82ffc9;
+  color:#fff;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-content: center;
+}
+label {
+  padding: 1.5rem;
 }
