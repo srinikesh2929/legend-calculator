@@ -6,6 +6,8 @@ const submit = document.getElementById('submit');
 const form = document.querySelector('form');  
 const article = document.querySelector('#article');
 // var article = document.getElementById('article');
+const timeElement = document.getElementById("time")
+
 
 
 function displayTime() {
@@ -14,7 +16,7 @@ function displayTime() {
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
   var time = hour + " : " + minutes + " : " + seconds;
-  document.getElementById("time").innerHTML = `Time is :${time}`;
+  timeElement.innerHTML = `Time is ${time}`;
 
   if (hour < 12) {
     greeting.innerHTML = "Good Morning!!";
@@ -32,21 +34,30 @@ function displayTime() {
 setInterval(displayTime, 100);
 
 init = () => {
+  // var text ='hi';
   for (let i = 0; i < 10; i++) {
     // const element = array[index];
     var para = document.createElement("p");
     para.classList.add("para");
-    // para.innerHTML = "This is a paragraph.";
+    // para.innerHTML = text;
     article.appendChild(para);
-    console.log(document.getElementsByClassName("para"));
+    // expInput.disabled = false;
+    // console.log(document.getElementsByClassName("para")[0]);
   }
 }
 
-tables = () => {
-  for (let i = 0; i < 10; i++) {
-    // const element = array[index];
-    var input = expInput.value;
-    var paras = document.getElementsByClassName("para");
-    paras.innerHTML=`{input} X {i} = {input*i}`
+submit.onclick = () => {
+  var object = document.getElementsByClassName("para");
+  var text = expInput.value;
+  // console.log('here it starts')
+  for (let i in object) {
+    // object[i].innerHTML = 'hello';
+    // object[0].innerHTML="shutup";
+    // object[9].innerHTML="You are a good boy";
+    product = i * text;
+    object[i].innerHTML = `${text} X ${i} = ${product}`
   }
-}
+  // console.log('ends here')
+    
+};
+console.log('This project is Working!! ⚡⚡⚡')
