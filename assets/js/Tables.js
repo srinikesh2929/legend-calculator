@@ -4,7 +4,7 @@ const expInput = document.getElementById('expInput');
 //var body = document.getElementById('body' );
 const submit = document.getElementById('submit');
 const form = document.querySelector('form');  
-var click_count = 0;
+const article = document.querySelector('#article');
 // var article = document.getElementById('article');
 
 
@@ -31,8 +31,23 @@ function displayTime() {
 
 setInterval(displayTime, 100);
 
-var tables = () => {
-  console.log('object');
-  setTimeout(console.log('object'), 3000);
+init = () => {
+  for (let i = 0; i < 10; i++) {
+    // const element = array[index];
+    var para = document.createElement("p");
+    para.classList.add("para");
+    // para.innerHTML = "This is a paragraph.";
+    article.appendChild(para);
+    console.log(document.getElementsByClassName("para"));
+  }
 }
 
+tables = () => {
+  for (let i = 0; i < 10; i++) {
+    // const element = array[index];
+    var input = expInput.value;
+    var paras = document.getElementsByClassName("para");
+    paras.innerHTML=`{input} X {i} = {input*i}`
+  }
+}
+form.onsubmit = tables();
