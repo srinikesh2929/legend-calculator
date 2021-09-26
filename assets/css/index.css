@@ -133,3 +133,9 @@ div {
   /* justify-content: center; */
   align-content: center;
 }
+
+a{
+  padding: 2rem;
+  text-decoration: none;
+  text-decoration-color: inherit;
+}
