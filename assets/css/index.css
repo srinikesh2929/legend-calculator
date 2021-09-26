@@ -133,9 +133,11 @@ div {
   /* justify-content: center; */
   align-content: center;
 }
-
-a{
+h3 {
   padding: 2rem;
+}
+a{
+  
   text-decoration: none;
   text-decoration-color: inherit;
 }
