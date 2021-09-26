@@ -34,20 +34,17 @@ setInterval(displayTime, 100);
 
 
 submit.onclick = () => {
-  const minusOneLimit = Number(numProducts.value) +1;
-  console.log(minusOneLimit);
-  const limit= minusOneLimit + 1;
-  console.log(limit);
-  for (let i = 0; i < limit; i++) {
+  const limit = Number(numProducts.value);
+  for (let i = 1; i = limit; i++) {
     var para = document.createElement("p");
     para.classList.add("para");
     article.appendChild(para);
   }
   var object = document.getElementsByClassName("para");
   var text = expInput.value;
-  for (let i in object) {
-    product = i * text;
-    object[i].innerHTML = `${text} X ${i} = ${product}`
+  for (let j in object) {
+    product = j * text;
+    object[j].innerHTML = `${text} X ${j} = ${product}`
   }
 
 };
